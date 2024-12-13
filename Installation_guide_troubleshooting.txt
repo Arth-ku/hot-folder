@@ -1,0 +1,20 @@
+Fisrt of all need copy _internal folder, icon.ico, Split_Print_MultiApp.exe and sumatra (32/64 depends of your system). 
+manually instalattion for sumatra not required! (don't install manually, only via app browser)
+1) After copy go to the printers -> put in the field passw: 1234 
+2) Make sure  you put in prefix 3 first symbol exactly how you send the files. like if it starts  PL_  you must put in 
+the field prefix:  PL_ (save the caps), for SPL -> put SPL and etc. !!!ONLY 3 FIRST SYMBOLS!!!!
+3) For 32 bit use Sumatra32, for 64 - sumatra 64. For check which architechture do you have go to cmd -> 
+	wmic os get OSArchitecture
+4) For check printers full name via cmd ->	
+	wmic printer get name
+5) Match prefix with printer
+6) minimize the app (via press close button)
+7) check if the icon moves to icon bar (should be wolf with yellow moon)
+8) for totally close the app choose the icon and make a right-click for quite or expanding (show)
+FOR TROUBLESHOOTING (only advanced users): 
+* If you make new installation, always put the shortcut to startup folder.
+* If you open under alredy running app - need close last one app (or you getting double print).
+* If the print folder doesn't exist (C:\DatexLables or C:\DatexLabels\archive) you getting error messages below the app. 
+* For RESET configuration this have two way, just edit via printers (settings in app) or delete/edit .json file. 
+* If you see errors with PREFIX, make sure u use caps and provide 3 symbol. After go to the .json file and check for 
+visible errors, if still not working, delete .json file and re-open the app for make new setup. 
